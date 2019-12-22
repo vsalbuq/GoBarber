@@ -1,4 +1,6 @@
 {
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "quoteProps": "preserve",
+  "arrowParens": "always"
 }
