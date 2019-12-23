@@ -3,7 +3,7 @@ module.exports = {
     'es6': true,
     'node': true,
   },
-  'extends': ['airbnb-base'],
+  'extends': ['airbnb-base', 'prettier'],
   'plugins': ['prettier'],
   'globals': {
     'Atomics': 'readonly',
@@ -19,8 +19,5 @@ module.exports = {
     'no-param-reassign': 'off',
     'camelcase': 'off',
     'no-unused-vars': ['error', { 'argsIgnorePattern': 'text' }],
-    'quote-props': ['error', 'consistent'],
-    'arrow-body-style': 'off',
-    'comma-dangle': 'off',
   },
 };
