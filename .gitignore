@@ -105,3 +105,6 @@ dist
 
 # Temporarily unversioned
 /backend/src/config/database.js
+
+# Upload file tests
+/backend/tmp/uploads
