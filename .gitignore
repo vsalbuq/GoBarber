@@ -108,3 +108,5 @@ dist
 
 # Upload file tests
 /backend/tmp/uploads
+
+.env
