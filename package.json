@@ -8,5 +8,9 @@
   ],
   "scripts": {
     "server": "yarn workspace server"
-  }
+  },
+  "nohoist": [
+    "*typeorm*",
+    "*typeorm*/**"
+  ]
 }
