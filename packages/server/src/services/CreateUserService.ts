@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import { hash } from "bcryptjs";
+import { hash } from 'bcryptjs';
 
 import User from '../models/User';
 
@@ -14,7 +14,7 @@ class CreateUserService {
     const usersRepository = getRepository(User);
 
     const checkUserExists = await usersRepository.findOne({
-      where: { email }
+      where: { email },
     });
 
     if (checkUserExists) {
@@ -23,11 +23,10 @@ class CreateUserService {
 
     const hashedPassword = await hash(password, 8);
 
-
     const user = usersRepository.create({
       name,
       email,
-      password: hashedPassword
+      password: hashedPassword,
     });
 
     await usersRepository.save(user);
